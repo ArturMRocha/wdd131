@@ -1,0 +1,78 @@
+/* layout.css */
+
+/* Definindo as fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Definindo o layout do grid */
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    grid-area: header;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilizando o menu de navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilizando o conteúdo principal */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+section {
+    background-color: #f4f4f4; /* Cinza claro */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+aside {
+    background-color: #e4e4e4; /* Cinza médio */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Estilizando o rodapé */
+footer {
+    grid-area: footer;
+    background-color: #333; /* Cinza escuro */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
