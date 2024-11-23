@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos da seção Hero */
+.hero {
+    position: relative;
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 2000px; /* Define um limite máximo para a largura */
+    max-height: 750px; /* Define um limite máximo para a altura */
+    border-radius: 10px;
+}
+
+/* Estilos da seção de dados */
+.data {
+    position: absolute;
+    bottom: 20px; /* Ajuste a posição inferior conforme necessário */
+    left: 20px; /* Ajuste a posição esquerda conforme necessário */
+    background-color: rgba(0, 128, 0, 0.8); /* Fundo verde */
+    color: white; /* Texto branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.data ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.data li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.data li strong {
+    font-weight: bold;
+}
+
+/* Estilos da seção de clima */
+.weather {
+    position: absolute;
+    top: 150px; /* Ajuste a posição superior conforme necessário */
+    right: 20px; /* Ajuste a posição direita conforme necessário */
+    background-color: rgba(0, 128, 0, 0.8); /* Fundo verde */
+    color: white; /* Texto branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.weather .weather-details {
+    display: relative;
+    align-items: center;
+    margin-top: 0;
+}
+
+.weather .weather-details img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.weather-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.weather-details li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.weather-details li strong {
+    font-weight: bold;
+}
+/* Estilos do rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .hero img {
+        max-width: 100%; /* Ajuste a largura conforme necessário */
+        max-height: 400px; /* Define um limite máximo para a altura */
+    }
+
+    .data, .weather {
+        position: static;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .data {
+        order: 2; /* Coloca a seção Data abaixo da seção Weather */
+    }
+
+    .weather {
+        order: 1; /* Coloca a seção Weather acima da seção Data */
+    }
+}
