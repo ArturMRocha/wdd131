@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Avaliação de Produto</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="script/form.js"></script>
+</head>
+<body>
+    <h1>Formulário de Avaliação de Produto</h1>
+    <form action="review.html" method="get">
+        <!-- Nome do Produto -->
+        <label for="product">Nome do Produto:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Selecione um produto...</option>
+            <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+        </select>
+
+        <!-- Classificação Geral -->
+        <fieldset>
+            <legend>Classificação Geral do Produto:</legend>
+            <label for="rating-1">
+                <input type="radio" name="rating" value="1" id="rating-1" required>
+                1 estrela
+            </label>
+            <label for="rating-2">
+                <input type="radio" name="rating" value="2" id="rating-2" required>
+                2 estrelas
+            </label>
+            <label for="rating-3">
+                <input type="radio" name="rating" value="3" id="rating-3" required>
+                3 estrelas
+            </label>
+            <label for="rating-4">
+                <input type="radio" name="rating" value="4" id="rating-4" required>
+                4 estrelas
+            </label>
+            <label for="rating-5">
+                <input type="radio" name="rating" value="5" id="rating-5" required>
+                5 estrelas
+            </label>
+        </fieldset>
+
+        <!-- Data de Instalação -->
+        <label for="installation-date">Data de Instalação:</label>
+        <input type="date" id="installation-date" name="installation_date" required>
+
+        <!-- Recursos Úteis -->
+        <fieldset>
+            <legend>Recursos Úteis:</legend>
+            <label for="feature1">
+                <input type="checkbox" id="feature1" name="features" value="Durability">
+                Durabilidade
+            </label>
+            <label for="feature2">
+                <input type="checkbox" id="feature2" name="features" value="Ease of Use">
+                Facilidade de Uso
+            </label>
+            <label for="feature3">
+                <input type="checkbox" id="feature3" name="features" value="Performance">
+                Desempenho
+            </label>
+            <label for="feature4">
+                <input type="checkbox" id="feature4" name="features" value="Design">
+                Design
+            </label>
+        </fieldset>
+
+        <!-- Resenha Escrita -->
+        <label for="review">Resenha Escrita (Opcional):</label>
+        <textarea id="review" name="review" rows="4" cols="50" placeholder="Escreva sua opinião aqui..."></textarea>
+
+        <!-- Nome de Usuário -->
+        <label for="username">Nome de Usuário (Opcional):</label>
+        <input type="text" id="username" name="username" placeholder="Digite seu nome">
+
+        <!-- Botão de Envio -->
+        <input type="submit" value="Enviar Avaliação">
+    </form>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy;2024 Arthur Roha / Rio De Janeiro </p>
+    </footer>
+</body>
+</html>
