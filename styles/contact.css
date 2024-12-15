@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E3EAEB;
+    color: #020100;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #248A6F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #F2A202;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #C22929;
+}
+
+/* Seção de Contato */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Informações de Contato */
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    color: #248A6F;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de Contato */
+.contact-form {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    color: #248A6F;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #248A6F;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #1e6f53;
+}
+
+/* Rodapé */
+footer {
+    background-color: #020100;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 768px (mobile) */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        margin-top: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+    }
+
+    .contact-form label {
+        font-size: 1em;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 0.9em;
+    }
+
+    .contact-form button {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+/* Para telas menores que 480px (telas muito pequenas) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    .contact-info img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 0.85em;
+    }
+
+    .contact-form button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}

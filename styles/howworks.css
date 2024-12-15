@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E3EAEB;
+    color: #020100;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #248A6F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #F2A202;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #C22929;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Ajustes para a imagem */
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Flexbox para distribuir imagens e conteúdo */
+.intro, .operation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Para a seção de operação, onde há duas imagens */
+.operation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.operation img {
+    width: 48%;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #248A6F;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Lista */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Desafios */
+.challenge {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-left: 5px solid #F2A202;
+    background-color: #E3EAEB;
+    border-radius: 5px;
+}
+
+.challenge h3 {
+    font-size: 1.5em;
+    color: #C22929;
+    margin-bottom: 10px;
+}
+
+.challenge p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+/* Informações de Contato */
+.contact-info {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    color: #248A6F;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de Contato */
+.contact-form {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    color: #248A6F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #248A6F;
+    box-shadow: 0 0 5px rgba(36, 138, 111, 0.5);
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #248A6F;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #1e6f53;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #020100;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

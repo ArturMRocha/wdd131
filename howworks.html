@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Electric Cars Work</title>
+    <link rel="stylesheet" href="style/howworks.css">
+    <script src="script/howworks.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>How Electric Cars Work</h1>
+        <p>Exploring the technology, advantages, and challenges of electric vehicles</p>
+    </header>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="howworks.html">How It Works</a>
+        <a href="contact.html">Contact & Support</a>
+    </nav>
+
+    <!-- Seção para o nome do usuário -->
+    <section class="user-name">
+        <h2>Enter your name:</h2>
+        <input type="text" id="user-name" placeholder="Your Name">
+        <button id="save-name">Save Name</button>
+    </section>
+
+    <!-- Seção de boas-vindas personalizada -->
+    <section class="welcome-message">
+        <h2 id="welcome-message">Bem-vindo ao Webcartrics!</h2>
+    </section>
+
+    <!-- Seção de introdução aos carros elétricos -->
+    <section class="intro">
+        <h2>Understanding Electric Cars</h2>
+        <p>Electric cars are powered by electric motors using energy stored in batteries. Unlike traditional internal combustion engines, electric motors produce zero emissions and provide a quieter, more efficient driving experience.</p>
+        <!-- Primeira imagem inserida dinamicamente pelo JavaScript -->
+    </section>
+
+    <!-- Seção de como os carros elétricos funcionam -->
+    <section class="operation">
+        <h2>How Do They Work?</h2>
+        <p>Electric vehicles (EVs) operate using a rechargeable battery pack that supplies electricity to the motor. The main components of an EV include:</p>
+        <ul>
+            <li><strong>Battery:</strong> Stores energy to power the motor.</li>
+            <li><strong>Electric Motor:</strong> Converts electrical energy into mechanical energy to move the vehicle.</li>
+            <li><strong>Inverter:</strong> Converts the battery's DC power into AC power for the motor.</li>
+            <li><strong>Charging Port:</strong> Allows the vehicle to connect to an external power source for recharging.</li>
+        </ul>
+        <p>This system eliminates the need for gasoline or diesel, making EVs a cleaner alternative to traditional vehicles.</p>
+        <!-- Segunda imagem inserida dinamicamente pelo JavaScript -->
+    </section>
+
+    <!-- Seção de desafios atuais dos carros elétricos -->
+    <section class="challenges">
+        <h2>Current Challenges</h2>
+        <p>Despite the advantages, electric cars still face several challenges that need to be addressed:</p>
+        <div class="challenge">
+            <h3>High Costs</h3>
+            <p>Electric cars are often more expensive than their gasoline counterparts due to the high cost of battery production.</p>
+        </div>
+        <div class="challenge">
+            <h3>Charging Infrastructure</h3>
+            <p>Many regions lack sufficient charging stations, making long-distance travel inconvenient for EV owners.</p>
+        </div>
+        <div class="challenge">
+            <h3>Limited Range</h3>
+            <p>Most electric vehicles have a limited range on a single charge compared to traditional vehicles with full gas tanks.</p>
+        </div>
+        <button id="toggle-challenges">Show Challenges</button>
+    </section>
+
+    <!-- Formulário de contato -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" autocomplete="off" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Botão para alternar entre modos claro e escuro -->
+    <button id="mode-toggle">Switch to Dark Mode</button>
+
+    <footer>
+        <p>&copy; 2024 / Arthur Rocha Webcartrics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
