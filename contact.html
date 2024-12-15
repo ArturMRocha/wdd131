@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Contact</title>
+    <link rel="stylesheet" href="style/contact.css">
+    <script src="script/contact.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Support & Contact</h1>
+        <p>We're here to assist you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+    </header>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="howworks.html">How It Works</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you need assistance or have any inquiries, please use the form below to contact us. We are happy to help you!</p>
+            <img src="images/recharging.webp" alt="Support Image" width="600">
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name">
+
+                <label for="company-size">Company Size:</label>
+                <select id="company-size" name="company-size">
+                    <option value="small">1-50 employees</option>
+                    <option value="medium">51-200 employees</option>
+                    <option value="large">200+ employees</option>
+                </select>
+
+                <label for="topic">Which topic best fits your needs?</label>
+                <select id="topic" name="topic">
+                    <option value="technical-support">Technical Support</option>
+                    <option value="sales-inquiry">Sales Inquiry</option>
+                    <option value="general-question">General Question</option>
+                    <option value="partnership">Partnership</option>
+                </select>
+
+                <label for="message">How can we help you?</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 / Arthur Rocha Webcartrics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
